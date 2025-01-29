@@ -4,3 +4,5 @@ endpoints:
   service:
      port: 3000
   type: REST
+  networkVisibilities:
+    - Project
