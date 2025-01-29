@@ -1,8 +1,11 @@
-schemaVersion: 1.0 
+schemaVersion: "1.1"
 endpoints:
-- name: node-server
-  service:
-     port: 3000
-  type: REST
-  networkVisibilities:
-    - Project
+    - name: node-server
+      displayName: node-server
+      service:
+        basePath: /
+        port: 3000
+      type: REST
+      networkVisibilities:
+        - Project
+      schemaFilePath: .
